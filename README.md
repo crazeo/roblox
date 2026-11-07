@@ -1,6 +1,6 @@
 # Coin Rush
 
-A small Roblox game: run around, collect coins (gold ones are worth 10), and spend them on speed upgrades. Coins and upgrades save between sessions.
+A small Roblox game: run around, collect coins (gold ones are worth 10) and floating apples (worth 5), and spend them on speed upgrades. Coins and upgrades save between sessions.
 
 ## Setup
 
@@ -15,6 +15,7 @@ A small Roblox game: run around, collect coins (gold ones are worth 10), and spe
 | --- | --- |
 | `src/shared/Config.luau` | All tuning numbers (coin counts, values, upgrade prices) |
 | `src/server/CoinSpawner.server.luau` | Spawns spinning coins and pays the player who touches one |
+| `src/server/Apples.server.luau` | Animated apples: bob, spin and wobble while idle, squash-and-pop with juice when grabbed |
 | `src/server/PlayerData.server.luau` | Leaderboard, saving/loading, applying walk speed |
 | `src/server/Shop.server.luau` | Checks and applies speed upgrade purchases |
 | `src/client/Hud.client.luau` | Coin counter, upgrade button, "+N" popups |
